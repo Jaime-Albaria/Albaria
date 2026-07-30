@@ -290,6 +290,19 @@
     .case-callout p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
     .case-callout p + p { margin-top: 0.5rem; }
     .case-callout .anon { display: block; font-size: 0.78rem; color: var(--muted-2); margin-top: 0.6rem; font-style: italic; }
+    /* Logo de cliente en el caso de éxito */
+    .client-logo {
+      display: block; height: 90px; width: auto; max-width: 100%;
+      margin-bottom: 1.1rem;
+      background: #fff; padding: 10px 16px; border-radius: 12px;
+      box-shadow: 0 6px 22px rgba(0,0,0,0.3);
+      object-fit: contain;
+    }
+    .proj .client-logo { height: 80px; margin-bottom: 1.2rem; }
+    @media (max-width: 480px) {
+      .client-logo { height: 70px; padding: 8px 12px; }
+      .proj .client-logo { height: 64px; }
+    }
 
     /* ── AGENTES + ENTORNOS (two-col) ── */
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
@@ -785,6 +798,7 @@
       </ul>
 
       <div class="case-callout">
+        <img src="brand/kento-logo.jpg" alt="Kento Digital Printing" class="client-logo">
         <span class="case-badge">✦ Caso de éxito · Kento Digital Printing</span>
         <h4>Kento — Presupuestos en 4 minutos con OfferBuilder</h4>
         <p>En Kento Digital Printing usan <strong style="color:var(--accent)">OfferBuilder</strong> para configurar sus presupuestos: pasaron de tardar unas <strong style="color:var(--text)">4 horas por presupuesto</strong> a tenerlo listo en <strong style="color:var(--accent)">4 minutos</strong>.</p>
@@ -874,6 +888,7 @@
     </div>
     <div class="proj-grid" style="grid-template-columns:1fr;max-width:760px;margin:0 auto">
       <article class="proj spot reveal">
+        <img src="brand/kento-logo.jpg" alt="Kento Digital Printing" class="client-logo">
         <span class="proj-tag">Kento Digital Printing</span>
         <h3>Presupuestos en 4 minutos, y una suite comercial completa</h3>
         <p class="proj-desc">Kento Digital Printing, fabricante de líneas híbridas para impresión de cartón ondulado, prepara ahora sus presupuestos con <strong style="color:var(--text)">OfferBuilder</strong> en unos 4 minutos, frente a las 4 horas que les llevaba antes.</p>
